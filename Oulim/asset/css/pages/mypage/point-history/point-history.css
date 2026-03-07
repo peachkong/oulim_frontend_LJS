@@ -9,7 +9,7 @@ footer {
 
 .main-container {
     border: 1px solid black;
-    height: 900px;
+    height: auto;
     display: flex;
     justify-content: center;
     margin: 100px;
@@ -62,49 +62,48 @@ footer {
     /* margin: 0 auto; */
     width: 700px;
     justify-content: center;
-}
-
-.main-text-box {
-    text-align: center;
-    padding: 10px;
-    row-gap: 10px;
-    margin-bottom: 50px;
-    
-
-}
-
-.m2-text-box-1 {
-    margin-top: 25px;
-    margin-bottom: 30px;
-
-}
-
-.dirrhks {
-    overflow-y: auto;
-}
-
-fieldset {
-    height: 200px;
-}
-
-.main-pw {
-    background-color: blanchedalmond;
-    margin: 15px auto;
-    width: 450px;
     
 }
 
-
-
-.c-button-group {
-    background-color: blueviolet;
+.main-section1 {
+    background-color: blue;
     display: flex;
     justify-content: center;
+    gap: 100px;
+    align-items: center;
+    height: 100px;
 }
 
-.c-button-group>button {
-    margin: 10px 1px;
+
+
+.main-section3 {
+   background-color: cadetblue;
+   padding: 30px;
 }
 
+
+.page>nav{
+  justify-content: center;
+}
+
+.sec3-nav>nav {
+  display: flex;
+  justify-content: center;
+  gap: 35%;
+}
+
+.sec3-list>ul>li {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.sec4-list>ul>li {
+    display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  align-items: center;
+}
 
 
