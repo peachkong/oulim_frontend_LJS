@@ -20,10 +20,7 @@
 
     <link rel="stylesheet" href="/Oulim/asset/css/pages/mypage/community-history/myposts.css">
 
-    <script defer>
-        fetch('/Oulim/header-login.html').then(r => r.text()).then(t => header.innerHTML = t)
-        fetch('/Oulim/footer.html').then(r => r.text()).then(t => footer.innerHTML = t)
-    </script>
+    <script defer src="/Oulim/asset/js/pages/main/include.js"></script>
 </head>
 
 <body>
@@ -47,29 +44,29 @@
                             <div class="p-mypage-posts--menu-group">
                                 <li>나의 정보</li>
                                 <br>
-                                <li>- 내 정보 보기</li>
+                                <a href="/Oulim/front/html/mypage/profile/profile.html"><li>- 내 정보 보기</li></a>
                                 <br>
-                                <li>- 내 정보 수정</li>
+                                <a href="/Oulim/front/html/mypage/profile/profile-edit.html"><li>- 내 정보 수정</li></a>
                             </div>
 
                             <div class="p-mypage-posts--menu-group">
                                 <li>봉사조회</li>
                                 <br>
-                                <li>- 예정된 봉사 이력 조회</li>
+                                <a href="/Oulim/front/html/mypage/volunteer-history/coming-volunteer.html"><li>- 예정된 봉사 이력 조회</li></a>
                                 <br>
-                                <li>- 완료된 봉사 이력 조회</li>
+                                <a href="/Oulim/front/html/mypage/volunteer-history/finish-volunteer.html"><li>- 완료된 봉사 이력 조회</li></a>
                             </div>
 
                             <div class="p-mypage-posts--menu-group">
-                                <li>포인트 조회</li>
+                                <a href="/Oulim/front/html/mypage/point-history/point-history.html"><li>포인트 조회</li></a>
                             </div>
 
                             <div class="p-mypage-posts--menu-group">
-                                <li>작성글 조회</li>
+                                <a href="/Oulim/front/html/mypage/community-history/myposts.html"><li>작성글 조회</li></a>
                             </div>
 
                             <div class="p-mypage-posts--menu-group">
-                                <li>회원 탈퇴</li>
+                                <a href="/Oulim/front/html/mypage/quit/quit.html"><li>회원 탈퇴</li></a>
                             </div>
 
                         </ul>
@@ -115,9 +112,9 @@
 
                                 <div class="c-list__actions">
 
-                                    <button class="c-button c-button--primary c-button--sm">
+                                    <a href="/Oulim/front/html/community/community-repost.html"><button class="c-button c-button--primary c-button--sm">
                                         수정
-                                    </button>
+                                    </button></a>
 
                                 </div>
 

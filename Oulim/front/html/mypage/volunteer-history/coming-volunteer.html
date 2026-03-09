@@ -20,15 +20,7 @@
 
   <link rel="stylesheet" href="/Oulim/asset/css/pages/mypage/volunteer-history/coming-volunteer.css" />
 
-  <script defer>
-    fetch('/Oulim/header-login.html')
-      .then(r => r.text())
-      .then(t => document.getElementById('header').innerHTML = t)
-
-    fetch('/Oulim/footer.html')
-      .then(r => r.text())
-      .then(t => document.getElementById('footer').innerHTML = t)
-  </script>
+  <script defer src="/Oulim/asset/js/pages/main/include.js"></script>
 </head>
 
 <body>
@@ -42,7 +34,6 @@
       <!-- aside -->
       <div class="main-aside">
         <aside>
-
           <div class="main-aside-list">
 
             <h2>마이페이지</h2>
@@ -50,35 +41,48 @@
             <ul class="list1">
               <li>나의 정보</li>
               <br>
-              <li>- 내 정보 보기</li>
+              <a href="/Oulim/front/html/mypage/profile/profile.html">
+                <li>- 내 정보 보기</li>
+              </a>
               <br>
-              <li>- 내 정보 수정</li>
-
+              <a href="/Oulim/front/html/mypage/profile/profile-edit.html">
+                <li>- 내 정보 수정</li>
+              </a>
+              <br>
             </ul>
 
             <ul class="list2">
               <li>봉사조회</li>
               <br>
-              <li>- 예정된 봉사 이력 조회</li>
+              <a href="/Oulim/front/html/mypage/volunteer-history/coming-volunteer.html">
+                <li>- 예정된 봉사 이력 조회</li>
+              </a>
               <br>
-              <li>- 완료된 봉사 이력 조회</li>
+              <a href="/Oulim/front/html/mypage/volunteer-history/finish-volunteer.html">
+                <li>- 완료된 봉사 이력 조회</li>
+              </a>
 
             </ul>
 
             <ul class="list3">
-              <li>포인트 조회</li>
+              <a href="/Oulim/front/html/mypage/point-history/point-history.html">
+                <li>포인트 조회</li>
+              </a>
             </ul>
 
             <ul class="list4">
-              <li>작성글 조회</li>
+              <a href="/Oulim/front/html/mypage/community-history/myposts.html">
+                <li>작성글 조회</li>
+              </a>
             </ul>
 
             <ul class="list5">
-              <li>회원 탈퇴</li>
+              <a href="/Oulim/front/html/mypage/quit/quit.html">
+                <li>회원 탈퇴</li>
+              </a>
             </ul>
 
           </div>
-
         </aside>
       </div>
 
