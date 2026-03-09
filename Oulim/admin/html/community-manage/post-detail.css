@@ -152,3 +152,68 @@ aside {
   grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid gold;
 }
+/* 후기게시판 카운트 */
+#post-count{
+    display:grid;
+  grid-template-columns: 1fr 1fr;
+    
+
+}
+/* 좋아요 추천 */
+#happy-count{
+  display: flex;
+  justify-content: end;
+}
+
+/* 게시글 내용 */
+
+.post-text{
+  display: flex;
+  padding: 20px;
+
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+/* 댓글 전체 영역 */
+
+.comment-area{
+  padding: 20px;
+}
+
+
+/* 댓글 제목 */
+
+.comment-title{
+  margin-bottom: 20px;
+}
+
+
+/* 댓글 리스트 */
+
+.comment-list{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+/* 댓글 하나 */
+
+.comment{
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fafafa;
+}
+
+
+/* 댓글 작성자 */
+
+.comment-user{
+
+  margin-bottom: 5px;
+}
+
+
+
