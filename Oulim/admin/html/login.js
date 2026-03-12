@@ -10,7 +10,7 @@ const userPw = document.getElementById("userPw");
 const errorBox = document.getElementById("is-user-login-error");
 const errorText = errorBox.querySelector("span");
 
-pwEye.addEventListener("click", function(){
+pwEye.addEventListener("click", function () {
   if (userPw.type === "password") {
     userPw.type = "text";
     pwEye.src = "/Oulim/asset/image/user/password-on.png";
@@ -20,17 +20,18 @@ pwEye.addEventListener("click", function(){
   }
 });
 
-loginForm.addEventListener("submit", function(e){
+// 로그인 빈칸 일시 오류
+loginForm.addEventListener("submit", function (e) {
   let message = "";
-  if(userName.value.trim() === ""){
+  if (userName.value.trim() === "") {
     message = "아이디를 입력하세요"
- 
-  }else if(userPw.value.trim() === ""){
+
+  } else if (userPw.value.trim() === "") {
     message = "비밀번호를 입력하세요"
-    
+
   }
 
-    if(message !== ""){
+  if (message !== "") {
     e.preventDefault();
     errorText.textContent = message;
     errorBox.style.display = "block";
@@ -39,11 +40,11 @@ loginForm.addEventListener("submit", function(e){
   }
 });
 
-userName.addEventListener("input", function(){
+userName.addEventListener("input", function () {
   errorBox.style.display = "none";
 });
 
-userPw.addEventListener("input", function(){
+userPw.addEventListener("input", function () {
   errorBox.style.display = "none";
 });
 
