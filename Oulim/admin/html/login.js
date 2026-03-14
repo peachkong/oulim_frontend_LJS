@@ -10,14 +10,12 @@ const userPw = document.getElementById("userPw");
 const errorBox = document.getElementById("is-user-login-error");
 const errorText = errorBox.querySelector("span");
 
-<<<<<<< HEAD
-pwEye.addEventListener("click", function () {
-=======
+
 // const loginButton = document.getElementsByClassName(".c-button");
 
 // 비밀번호 입력 확인 온 오프
 pwEye.addEventListener("click", function(){
->>>>>>> hsi
+
   if (userPw.type === "password") {
     userPw.type = "text";
     pwEye.src = "/Oulim/asset/image/user/password-on.png";
@@ -27,14 +25,11 @@ pwEye.addEventListener("click", function(){
   }
 });
 
-<<<<<<< HEAD
-// 로그인 빈칸 일시 오류
-loginForm.addEventListener("submit", function (e) {
-=======
+
 // 로그인 정보 채우지 않을시 경고 메세지
 
 loginForm.addEventListener("submit", function(e){
->>>>>>> hsi
+
   let message = "";
   if (userName.value.trim() === "") {
     message = "아이디를 입력하세요"
@@ -52,19 +47,13 @@ loginForm.addEventListener("submit", function(e){
 
   }
 });
-<<<<<<< HEAD
 
-userName.addEventListener("input", function () {
-=======
 // 입력시 경고 메세지 사라짐
 userName.addEventListener("input", function(){
->>>>>>> hsi
+
   errorBox.style.display = "none";
 });
 
-userPw.addEventListener("input", function () {
-  errorBox.style.display = "none";
-});
 
 
 // loginButton.addEventListener("click", function(){

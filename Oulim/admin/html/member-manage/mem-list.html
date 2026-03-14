@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
   <link rel="stylesheet" href="/Oulim/admin/css/member-manage/mem-list.css" />
+  <script defer src="/Oulim/admin/js/member-manage/mem-list.js"></script>
+
 </head>
 
 <body>
@@ -67,13 +69,12 @@
       </nav>
     </aside>
 
-    <!-- 메인 컨텐츠 -->
-    <div class="search-user">
+
       <!-- 메인헤더 -->
-      <div class="header">
-        <h1>회원조회</h1>
-      </div>
       <section class="l-content">
+        <div class="header">
+          <h1>회원조회</h1>
+        </div>
         <div id="content-area">
           <select class="search-item">
             <option>유저번호</option>
@@ -130,8 +131,8 @@
                 1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  <a href="/Oulim/admin/html/member-manage/mem-edit.html">회원수정</a>
+                <button class="c-button c-button--primary c-button--md memedit">
+                  회원수정
                 </button>
                 <button class="c-button c-button--secondary c-button--md">
                   회원탈퇴
@@ -162,8 +163,8 @@
                 1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  <a href="/Oulim/admin/html/member-manage/mem-edit.html">회원수정</a>
+                <button class="c-button c-button--primary c-button--md memedit">
+                  회원수정
                 </button>
                 <button class="c-button c-button--secondary c-button--md">
                   회원탈퇴
@@ -194,8 +195,8 @@
                 1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  <a href="/Oulim/admin/html/member-manage/mem-edit.html">회원수정</a>
+                <button class="c-button c-button--primary c-button--md memedit">
+                  회원수정
                 </button>
                 <button class="c-button c-button--secondary c-button--md">
                   회원탈퇴
@@ -226,8 +227,8 @@
                 1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  <a href="/Oulim/admin/html/member-manage/mem-edit.html">회원수정</a>
+                <button class="c-button c-button--primary c-button--md memedit">
+                  회원수정
                 </button>
                 <button class="c-button c-button--secondary c-button--md">
                   회원탈퇴
@@ -236,27 +237,27 @@
             </div>
           </div>
         </div>
+        <div class="page">
+          <!-- 페이지네이션  c-pagination-->
+          <nav class="c-pagination">
+            <a class="c-pagination__link is-disabled">‹‹</a>
+            <a class="c-pagination__link is-disabled">‹</a>
+            <a class="c-pagination__link is-active">1</a>
+            <a class="c-pagination__link">2</a>
+            <a class="c-pagination__link">3</a>
+            <a class="c-pagination__link">4</a>
+            <a class="c-pagination__link">5</a>
+            <a class="c-pagination__link">6</a>
+            <a class="c-pagination__link">7</a>
+            <a class="c-pagination__link">8</a>
+            <a class="c-pagination__link">9</a>
+            <a class="c-pagination__link">10</a>
+            <a class="c-pagination__link">›</a>
+            <a class="c-pagination__link">››</a>
+          </nav>
+        </div>
       </section>
-      <div class="page">
-        <!-- 페이지네이션  c-pagination-->
-        <nav class="c-pagination">
-          <a class="c-pagination__link is-disabled">‹‹</a>
-          <a class="c-pagination__link is-disabled">‹</a>
-          <a class="c-pagination__link is-active">1</a>
-          <a class="c-pagination__link">2</a>
-          <a class="c-pagination__link">3</a>
-          <a class="c-pagination__link">4</a>
-          <a class="c-pagination__link">5</a>
-          <a class="c-pagination__link">6</a>
-          <a class="c-pagination__link">7</a>
-          <a class="c-pagination__link">8</a>
-          <a class="c-pagination__link">9</a>
-          <a class="c-pagination__link">10</a>
-          <a class="c-pagination__link">›</a>
-          <a class="c-pagination__link">››</a>
-        </nav>
-      </div>
-    </div>
+
   </main>
 
 

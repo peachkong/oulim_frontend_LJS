@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
   <link rel="stylesheet" href="/Oulim/admin/css/community-manage/post-list.css" />
+
+  <script defer src = "/Oulim/admin/js/community-manage/post-list.js"></script>
 </head>
 
 <body>
@@ -66,13 +68,11 @@
       </nav>
     </aside>
 
-    <!-- 메인 컨텐츠 -->
-    <div class="search-user">
-
-      <div class="header">
-        <h1>게시글 관리</h1>
-      </div>
       <section class="l-content">
+        <!-- 메인 위에 헤더 -->
+        <div class="header">
+          <h1>게시글 관리</h1>
+        </div>
         <div id="content-area">
           <select class="search-item">
             <option>게시글 번호</option>
@@ -223,27 +223,27 @@
             </div>
           </div>
         </div>
+        <div class="page">
+          <!-- 페이지네이션  c-pagination-->
+          <nav class="c-pagination">
+            <a class="c-pagination__link is-disabled">‹‹</a>
+            <a class="c-pagination__link is-disabled">‹</a>
+            <a class="c-pagination__link is-active">1</a>
+            <a class="c-pagination__link">2</a>
+            <a class="c-pagination__link">3</a>
+            <a class="c-pagination__link">4</a>
+            <a class="c-pagination__link">5</a>
+            <a class="c-pagination__link">6</a>
+            <a class="c-pagination__link">7</a>
+            <a class="c-pagination__link">8</a>
+            <a class="c-pagination__link">9</a>
+            <a class="c-pagination__link">10</a>
+            <a class="c-pagination__link">›</a>
+            <a class="c-pagination__link">››</a>
+          </nav>
+        </div>
       </section>
-      <div class="page">
-        <!-- 페이지네이션  c-pagination-->
-        <nav class="c-pagination">
-          <a class="c-pagination__link is-disabled">‹‹</a>
-          <a class="c-pagination__link is-disabled">‹</a>
-          <a class="c-pagination__link is-active">1</a>
-          <a class="c-pagination__link">2</a>
-          <a class="c-pagination__link">3</a>
-          <a class="c-pagination__link">4</a>
-          <a class="c-pagination__link">5</a>
-          <a class="c-pagination__link">6</a>
-          <a class="c-pagination__link">7</a>
-          <a class="c-pagination__link">8</a>
-          <a class="c-pagination__link">9</a>
-          <a class="c-pagination__link">10</a>
-          <a class="c-pagination__link">›</a>
-          <a class="c-pagination__link">››</a>
-        </nav>
-      </div>
-    </div>
+
   </main>
 
 
